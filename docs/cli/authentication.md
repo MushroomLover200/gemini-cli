@@ -33,6 +33,13 @@ The Gemini CLI requires you to authenticate with Google's AI services. On initia
         ```bash
         export GEMINI_API_KEY="YOUR_GEMINI_API_KEY"
         ```
+
+      > **Note:**
+      > You can also provide multiple API keys as a comma-separated list. The CLI will automatically rotate through the keys.
+      >
+      > ```bash
+      > export GEMINI_API_KEY="YOUR_GEMINI_API_KEY_1,YOUR_GEMINI_API_KEY_2"
+      > ```
       - For repeated use, you can add the environment variable to your [.env file](#persisting-environment-variables-with-env-files).
 
       - Alternatively you can export the API key from your shell's configuration file (like `~/.bashrc`, `~/.zshrc`, or `~/.profile`). For example, the following command adds the environment variable to a `~/.bashrc` file:
